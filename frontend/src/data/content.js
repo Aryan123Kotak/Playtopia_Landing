@@ -9,16 +9,13 @@ export const EVENT = {
 };
 
 export const IMAGES = {
-  heroFlatlay:
-    "https://static.prod-images.emergentagent.com/jobs/91cfc487-fda6-4415-ad0b-303dfb7e3180/images/5003bc970931b225e3177a1688304219fdd29e8e4f459bc85b5ed62c611f2a3f.jpeg",
+  heroFlatlay: "/Hero Image.jpeg",
   giantJenga: "/Jenga.png",
   giantTwister: "/Twistter.png",
   chess: "/Chess.png",
   experienceZone: "/Experience Zone.png",
-  boardGames:
-    "https://static.prod-images.emergentagent.com/jobs/91cfc487-fda6-4415-ad0b-303dfb7e3180/images/db234da8eb113b81c4a74d91b9b997e7528b5a84becdd327fb5eedf2c6e03925.jpeg",
-  crowdNight:
-    "https://static.prod-images.emergentagent.com/jobs/91cfc487-fda6-4415-ad0b-303dfb7e3180/images/2f982fb8932de18c40d9d24c12856baad6fd0835247c0f3c9ba5a91a8628ef60.jpeg",
+  competitionZone: "/Compitition Zone.png",
+  boardGames: "/Hero Image.jpeg",
 };
 
 export const CHAPTERS = [
@@ -66,7 +63,7 @@ export const ZONES = [
     line: "Take on challenges, go head-to-head and put your skills — and your friendships — to the test.",
     color: "coral",
     banners: ["Live-Size Jenga", "Largest Twister", "Chess • ₹10,000", "Live Leaderboard"],
-    img: IMAGES.crowdNight,
+    img: IMAGES.competitionZone,
   },
   {
     name: "Experience Zone",
