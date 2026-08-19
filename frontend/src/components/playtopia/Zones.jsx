@@ -9,7 +9,7 @@ export default function Zones() {
     <section id="zones" className="relative py-24 sm:py-32 border-y-[3px] border-ink" style={{ backgroundColor: "#EFE9DA" }} data-testid="zones-section">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="max-w-3xl">
-          <Eyebrow color="purple">The Zones</Eyebrow>
+          <Eyebrow color="purple">The Three Zones</Eyebrow>
           <h2 className="mt-4 text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
             Three worlds. <span className="text-purple">One festival.</span>
           </h2>

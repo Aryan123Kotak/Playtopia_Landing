@@ -12,10 +12,10 @@ export default function KeyAttractions() {
           <div className="max-w-2xl">
             <Eyebrow color="coral">Key Attractions</Eyebrow>
             <h2 className="mt-4 text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
-              Big Games. <span className="text-pink">Bigger</span> Bragging Rights.
+              Big Games. <span className="text-pink">Real Challenges.</span> Bragging Rights.
             </h2>
           </div>
-          <PlayButton href={TICKET_URL} color="coral" testid="attractions-register-btn"><Ticket className="h-5 w-5" /> Register Here</PlayButton>
+          <PlayButton href={TICKET_URL} color="coral" testid="attractions-register-btn"><Ticket className="h-5 w-5" /> Register Now</PlayButton>
         </div>
 
         <div className="mt-16 space-y-8">

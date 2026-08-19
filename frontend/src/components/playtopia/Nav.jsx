@@ -5,11 +5,11 @@ import { Logo, PlayButton } from "./primitives";
 import { TICKET_URL } from "@/data/content";
 
 const LINKS = [
-  { label: "Momentum", href: "#momentum" },
+  { label: "About", href: "#about" },
   { label: "The Zones", href: "#zones" },
   { label: "Attractions", href: "#attractions" },
-  { label: "Audience", href: "#audience" },
-  { label: "Sponsor", href: "#sponsor" },
+  { label: "Communities", href: "#communities" },
+  { label: "Event Details", href: "#event-details" },
 ];
 
 export default function Nav() {
@@ -44,7 +44,7 @@ export default function Nav() {
 
         <div className="flex items-center gap-3">
           <PlayButton href={TICKET_URL} color="pink" testid="nav-register-btn" className="!px-5 !py-2.5 hidden sm:inline-flex">
-            <Ticket className="h-4 w-4" /> Register Here
+            <Ticket className="h-4 w-4" /> Register Now
           </PlayButton>
           <button onClick={() => setOpen((o) => !o)} data-testid="mobile-menu-toggle" className="lg:hidden grid place-items-center h-10 w-10 rounded-full border-[3px] border-ink bg-amber" aria-label="Menu">
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -60,7 +60,7 @@ export default function Nav() {
                 <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="py-2 text-base font-bold uppercase tracking-wide">{l.label}</a>
               ))}
               <PlayButton href={TICKET_URL} color="pink" testid="mobile-register-btn" className="mt-3 justify-center">
-                <Ticket className="h-4 w-4" /> Register Here
+                <Ticket className="h-4 w-4" /> Register Now
               </PlayButton>
             </div>
           </motion.div>

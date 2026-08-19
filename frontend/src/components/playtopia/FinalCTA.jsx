@@ -28,16 +28,16 @@ export default function FinalCTA() {
 
       <div className="relative z-10 mx-auto max-w-5xl px-5 sm:px-8 text-center">
         <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="text-4xl sm:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.88]">
-          Great Festivals Aren't <span className="text-coral">Built Overnight.</span>
+          Your <span className="text-coral">Move.</span>
         </motion.h2>
         <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl font-medium text-ink/75">
-          They're built by the people who choose to show up before everyone else. We'll remember our founding players. So will your friends.
+          1000+ games. Three zones. One very good evening.
         </motion.p>
 
         <div className="mt-10 flex flex-col items-center gap-6">
           <Logo className="h-14 sm:h-20" />
-          <PlayButton href={TICKET_URL} color="pink" testid="final-register-btn" className="!text-base sm:!text-lg !px-9 !py-4"><Ticket className="h-5 w-5" /> Register Here</PlayButton>
-          <div className="text-sm font-bold uppercase tracking-wide text-ink/70">{EVENT.date} • {EVENT.venue}</div>
+          <PlayButton href={TICKET_URL} color="pink" testid="final-register-btn" className="!text-base sm:!text-lg !px-9 !py-4"><Ticket className="h-5 w-5" /> Register Now</PlayButton>
+          <div className="text-sm font-bold uppercase tracking-wide text-ink/70">{EVENT.date} • {EVENT.time} • Dhruv Global School, Nande</div>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ export default function FinalCTA() {
         <div className="mx-auto flex max-w-7xl flex-col sm:flex-row items-center justify-between gap-4 px-5 sm:px-8 pt-8">
           <Logo className="h-8" />
           <p className="text-sm font-semibold text-ink/70">{EVENT.tagline}</p>
-          <p className="text-xs font-bold uppercase tracking-wide text-ink/60">© 2026 Playtopia • Pune</p>
+          <p className="text-xs font-bold uppercase tracking-wide text-ink/60">&copy; 2026 Playtopia &bull; Pune</p>
         </div>
       </footer>
     </section>
