@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 44 43% 95%;
+    --foreground: 0 0% 8%;
+    --border: 0 0% 8%;
+  }
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F7F4EC;
+  color: #141414;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #F22075;
+  color: #F7F4EC;
+}
+
+/* Logo accent pop-in */
+@keyframes ptpop {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.18); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.pt-pop { animation: ptpop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* thin scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #F7F4EC; }
+::-webkit-scrollbar-thumb { background: #141414; border: 2px solid #F7F4EC; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-floaty, .animate-spinslow { animation: none !important; }
+}
