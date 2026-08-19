@@ -11,12 +11,10 @@ export const EVENT = {
 export const IMAGES = {
   heroFlatlay:
     "https://static.prod-images.emergentagent.com/jobs/91cfc487-fda6-4415-ad0b-303dfb7e3180/images/5003bc970931b225e3177a1688304219fdd29e8e4f459bc85b5ed62c611f2a3f.jpeg",
-  giantJenga:
-    "https://static.prod-images.emergentagent.com/jobs/91cfc487-fda6-4415-ad0b-303dfb7e3180/images/329c6f85dc2421b67d5596759d6d2d2a57474864a1c8152e8ce7badb9790a9b5.jpeg",
-  giantTwister:
-    "https://static.prod-images.emergentagent.com/jobs/91cfc487-fda6-4415-ad0b-303dfb7e3180/images/6446502289ac03f37a928a8d3ddd1c50de7e204ff05ec345ecd5f851bbe343ec.jpeg",
-  chess:
-    "https://static.prod-images.emergentagent.com/jobs/91cfc487-fda6-4415-ad0b-303dfb7e3180/images/3028c13b9fde9a6a4133c3bd7f065706afc3b5e473331f93ea52ba870abe2641.jpeg",
+  giantJenga: "/Jenga.png",
+  giantTwister: "/Twistter.png",
+  chess: "/Chess.png",
+  experienceZone: "/Experience Zone.png",
   boardGames:
     "https://static.prod-images.emergentagent.com/jobs/91cfc487-fda6-4415-ad0b-303dfb7e3180/images/db234da8eb113b81c4a74d91b9b997e7528b5a84becdd327fb5eedf2c6e03925.jpeg",
   crowdNight:
@@ -76,7 +74,7 @@ export const ZONES = [
     line: "Explore, compete, discover and get involved beyond the game table.",
     color: "pink",
     banners: ["Brand Activations", "Interactive Stations", "New Discoveries", "Surprises"],
-    img: IMAGES.boardGames,
+    img: IMAGES.experienceZone,
   },
 ];
 
