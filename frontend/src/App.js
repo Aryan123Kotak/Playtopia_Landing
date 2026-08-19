@@ -2,13 +2,13 @@ import "@/App.css";
 import { ReactLenis } from "lenis/react";
 import Nav from "@/components/playtopia/Nav";
 import Hero from "@/components/playtopia/Hero";
-import MarketMomentum from "@/components/playtopia/MarketMomentum";
 import WhatIsPlaytopia from "@/components/playtopia/WhatIsPlaytopia";
 import Ribbon from "@/components/playtopia/Ribbon";
-import KeyAttractions from "@/components/playtopia/KeyAttractions";
 import Zones from "@/components/playtopia/Zones";
-import Audience from "@/components/playtopia/Audience";
-import Credibility from "@/components/playtopia/Credibility";
+import KeyAttractions from "@/components/playtopia/KeyAttractions";
+import Communities from "@/components/playtopia/MarketMomentum";
+import WhoIsItFor from "@/components/playtopia/Audience";
+import EventInfo from "@/components/playtopia/Credibility";
 import FinalCTA from "@/components/playtopia/FinalCTA";
 
 function App() {
@@ -18,14 +18,14 @@ function App() {
       <Nav />
       <main>
         <Hero />
-        <MarketMomentum />
         <WhatIsPlaytopia />
         <Ribbon color="coral" direction="left" />
+        <Zones />
         <KeyAttractions />
         <Ribbon color="teal" direction="right" />
-        <Zones />
-        <Audience />
-        <Credibility />
+        <Communities />
+        <WhoIsItFor />
+        <EventInfo />
         <FinalCTA />
       </main>
     </div>

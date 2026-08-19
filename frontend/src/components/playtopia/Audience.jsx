@@ -1,63 +1,37 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { Eyebrow, HEX } from "./primitives";
-import { AUDIENCE } from "@/data/content";
+import { PERSONAS } from "@/data/content";
 
-export default function Audience() {
+export default function WhoIsItFor() {
   return (
-    <section id="audience" className="relative py-24 sm:py-32 overflow-hidden" data-testid="audience-section">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 grid items-center gap-14 lg:grid-cols-2">
-        <div>
-          <Eyebrow color="teal">The Audience</Eyebrow>
+    <section id="who" className="relative py-24 sm:py-32 overflow-hidden" data-testid="who-section">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="max-w-3xl">
+          <Eyebrow color="teal">Who is it for?</Eyebrow>
           <h2 className="mt-4 text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
-            3,000+ Buyers.<br /><span className="text-pink">Perfectly Segmented.</span>
+            Find Your <span className="text-pink">Player Type.</span>
           </h2>
-          <p className="mt-6 max-w-lg text-lg sm:text-xl font-medium text-ink/75">
-            Premium Pune neighborhoods. Upper-middle class. High intent. <span className="font-black text-ink">67% plan to purchase during Diwali.</span>
-          </p>
-
-          <div className="mt-8 space-y-3">
-            {AUDIENCE.map((a, i) => (
-              <motion.div
-                key={a.name}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="flex items-center gap-4"
-                data-testid={`audience-legend-${i}`}
-              >
-                <span className="h-5 w-5 rounded-md border-2 border-ink" style={{ backgroundColor: a.color }} />
-                <span className="w-40 text-base font-bold uppercase tracking-wide">{a.name}</span>
-                <div className="relative h-4 flex-1 rounded-full border-2 border-ink bg-cream overflow-hidden">
-                  <motion.div initial={{ width: 0 }} whileInView={{ width: `${a.value}%` }} viewport={{ once: true }} transition={{ duration: 0.9, delay: 0.2 + i * 0.08, ease: "easeOut" }} className="h-full" style={{ backgroundColor: a.color }} />
-                </div>
-                <span className="w-12 text-right text-lg font-black">{a.value}%</span>
-              </motion.div>
-            ))}
-          </div>
         </div>
 
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="relative mx-auto w-full max-w-md" data-testid="audience-donut">
-          <div className="relative rounded-[2.5rem] border-[4px] border-ink bg-cream p-6 shadow-[10px_10px_0px_0px_#141414]">
-            <div className="relative h-[320px]">
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <Pie data={AUDIENCE} dataKey="value" nameKey="name" innerRadius="58%" outerRadius="92%" startAngle={90} endAngle={-270} stroke="#141414" strokeWidth={3} paddingAngle={2}>
-                    {AUDIENCE.map((a) => <Cell key={a.name} fill={a.color} />)}
-                  </Pie>
-                </PieChart>
-              </ResponsiveContainer>
-              <div className="pointer-events-none absolute inset-0 grid place-items-center text-center">
-                <div>
-                  <div className="text-5xl font-black tracking-tighter">3K+</div>
-                  <div className="text-xs font-bold uppercase tracking-[0.2em] text-ink/70">Attendees</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {PERSONAS.map((p, i) => (
+            <motion.div
+              key={p.name}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
+              className="group relative overflow-hidden rounded-3xl border-[3px] border-ink p-7 shadow-[6px_6px_0px_0px_#141414] bg-cream hover:shadow-[2px_2px_0px_0px_#141414] hover:translate-x-[4px] hover:translate-y-[4px] transition-[transform,box-shadow] duration-200"
+              data-testid={`persona-card-${i}`}
+            >
+              <div className="text-5xl mb-4">{p.emoji}</div>
+              <h3 className="text-xl font-black uppercase tracking-tight" style={{ color: HEX[p.color] }}>{p.name}</h3>
+              <p className="mt-3 text-sm sm:text-base font-medium text-ink/75 leading-snug">{p.line}</p>
+              <div className="absolute -bottom-2 -right-2 text-8xl font-black tracking-tighter select-none leading-none opacity-[0.06]">0{i + 1}</div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

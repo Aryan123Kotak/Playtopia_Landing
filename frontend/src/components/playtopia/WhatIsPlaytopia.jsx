@@ -14,10 +14,13 @@ export default function WhatIsPlaytopia() {
         <div className="max-w-4xl">
           <Eyebrow color="amber">What is Playtopia</Eyebrow>
           <h2 className="mt-4 text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
-            1000+ Games. One Day.<br /><span className="text-teal">Three Zones.</span> Full Conversion.
+            1000+ Games. One Day.<br /><span className="text-teal">Three Zones.</span> Countless Ways to Play.
           </h2>
           <p className="mt-6 max-w-2xl text-lg sm:text-xl font-medium text-cream/80">
-            A one-day board game festival that blends competition, community and celebration across three immersive zones. Every path ends at play.
+            Playtopia is a celebration of board games, competition, communities and the people who make playing them so much fun.
+          </p>
+          <p className="mt-4 max-w-2xl text-lg sm:text-xl font-semibold text-cream/90">
+            Discover new games. Meet new people. Challenge your friends. Find your next obsession.
           </p>
         </div>
 
@@ -42,10 +45,6 @@ export default function WhatIsPlaytopia() {
             </motion.div>
           ))}
         </div>
-
-        <p className="mt-10 max-w-2xl text-xl sm:text-2xl font-bold italic text-cream/90">
-          "Every zone drives to your space. Every path ends at your product."
-        </p>
       </div>
     </section>
   );
