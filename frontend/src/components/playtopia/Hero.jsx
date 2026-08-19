@@ -62,7 +62,6 @@ export default function Hero() {
       <motion.div style={{ y: yFast }} className="pointer-events-none absolute left-[6%] top-[26%]"><motion.div style={{ x: s1x, y: s1y }} className="animate-floaty"><Shape type="star" color="pink" size={54} /></motion.div></motion.div>
       <motion.div style={{ y: ySlow }} className="pointer-events-none absolute right-[9%] top-[28%]"><motion.div style={{ x: s2x, y: s2y }} className="animate-spinslow"><Shape type="ring" color="purple" size={72} /></motion.div></motion.div>
       <motion.div style={{ y: yFast }} className="pointer-events-none absolute right-[24%] bottom-[20%]"><motion.div style={{ x: s3x, y: s3y }} className="animate-floaty"><Shape type="triangle" color="lime" size={46} /></motion.div></motion.div>
-      <motion.div style={{ y: ySlow }} className="pointer-events-none absolute left-[13%] bottom-[15%]"><motion.div style={{ x: s4x, y: s4y }}><Shape type="wave" color="coral" size={92} /></motion.div></motion.div>
 
       <motion.div style={{ opacity: heroOpacity }} className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
