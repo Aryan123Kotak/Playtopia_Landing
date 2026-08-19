@@ -15,7 +15,7 @@ export const IMAGES = {
   chess: "/Chess.png",
   experienceZone: "/Experience Zone.png",
   competitionZone: "/Compitition Zone.png",
-  boardGames: "/Hero Image.jpeg",
+  boardGames: "/Board Game Zone.png",
 };
 
 export const CHAPTERS = [
