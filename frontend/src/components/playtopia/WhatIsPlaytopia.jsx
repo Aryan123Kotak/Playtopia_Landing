@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 import { Eyebrow, HEX, Shape } from "./primitives";
 import { CHAPTERS } from "@/data/content";
 
@@ -32,16 +31,11 @@ export default function WhatIsPlaytopia() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, delay: i * 0.12 }}
-              className="group relative bg-ink p-8 sm:p-10 transition-colors duration-300 hover:bg-[#1c1c1c]"
+              className="group relative bg-ink p-8 sm:p-10 transition-colors duration-300 hover:bg-[#1c1c1c] flex flex-col justify-center"
               data-testid={`chapter-${c.no}`}
             >
-              <div className="flex items-start justify-between">
-                <span className="text-7xl font-black tracking-tighter leading-none" style={{ color: HEX[c.color] }}>{c.no}</span>
-                <ArrowUpRight className="h-7 w-7 opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
-              </div>
-              <h3 className="mt-6 text-3xl font-black uppercase tracking-tight">{c.title}</h3>
-              <div className="mt-1 text-xs font-bold uppercase tracking-[0.2em]" style={{ color: HEX[c.color] }}>{c.zone}</div>
-              <p className="mt-4 text-base font-medium text-cream/70 leading-snug">{c.line}</p>
+              <h3 className="text-4xl sm:text-5xl font-black uppercase tracking-tight">{c.title}</h3>
+              <p className="mt-5 text-lg sm:text-xl font-medium text-cream/80 leading-relaxed">{c.line}</p>
             </motion.div>
           ))}
         </div>
