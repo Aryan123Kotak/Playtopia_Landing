@@ -47,6 +47,11 @@ html.lenis, html.lenis body { height: auto; }
 ::-webkit-scrollbar-track { background: #F7F4EC; }
 ::-webkit-scrollbar-thumb { background: #141414; border: 2px solid #F7F4EC; }
 
+/* Chapter box hover color */
+.chapter-box:hover {
+  background-color: var(--hover-bg) !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-floaty, .animate-spinslow { animation: none !important; }
 }

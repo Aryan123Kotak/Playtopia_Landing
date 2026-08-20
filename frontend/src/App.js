@@ -6,6 +6,7 @@ import WhatIsPlaytopia from "@/components/playtopia/WhatIsPlaytopia";
 import Ribbon from "@/components/playtopia/Ribbon";
 import Zones from "@/components/playtopia/Zones";
 import KeyAttractions from "@/components/playtopia/KeyAttractions";
+import Extras from "@/components/playtopia/Extras";
 import Communities from "@/components/playtopia/MarketMomentum";
 import WhoIsItFor from "@/components/playtopia/Audience";
 import EventInfo from "@/components/playtopia/Credibility";
@@ -22,6 +23,7 @@ function App() {
         <Ribbon color="coral" direction="left" />
         <Zones />
         <KeyAttractions />
+        <Extras />
         <Ribbon color="teal" direction="right" />
         <Communities />
         <WhoIsItFor />
