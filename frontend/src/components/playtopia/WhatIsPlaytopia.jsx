@@ -13,7 +13,7 @@ export default function WhatIsPlaytopia() {
         <div className="max-w-4xl">
           <Eyebrow color="amber">What is Playtopia</Eyebrow>
           <h2 className="mt-4 text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.9]">
-            1000+ Games. One Day.<br /><span className="text-teal">Three Zones.</span> Countless Ways to Play.
+            1000s of Games. One Day.<br /><span className="text-teal">Three Zones.</span> Countless Ways to Play.
           </h2>
           <p className="mt-6 max-w-2xl text-lg sm:text-xl font-medium text-cream/80">
             Playtopia is a celebration of board games, competition, communities and the people who make playing them so much fun.
@@ -24,20 +24,26 @@ export default function WhatIsPlaytopia() {
         </div>
 
         <div className="mt-16 grid gap-px border-[3px] border-cream/20 rounded-3xl overflow-hidden sm:grid-cols-3 bg-cream/10">
-          {CHAPTERS.map((c, i) => (
-            <motion.div
-              key={c.no}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.55, delay: i * 0.12 }}
-              className="group relative bg-ink p-8 sm:p-10 transition-colors duration-300 hover:bg-[#1c1c1c] flex flex-col justify-center"
-              data-testid={`chapter-${c.no}`}
-            >
-              <h3 className="text-4xl sm:text-5xl font-black uppercase tracking-tight">{c.title}</h3>
-              <p className="mt-5 text-lg sm:text-xl font-medium text-cream/80 leading-relaxed">{c.line}</p>
-            </motion.div>
-          ))}
+          {CHAPTERS.map((c, i) => {
+            const hoverColors = ["#0CB6BF", "#FC5C54", "#F22075"];
+            return (
+              <motion.div
+                key={c.title}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.55, delay: i * 0.12 }}
+                className="group relative bg-ink p-8 sm:p-10 transition-colors duration-300 flex flex-col justify-center"
+                style={{ "--hover-bg": hoverColors[i] }}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = hoverColors[i]}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ""}
+                data-testid={`chapter-${i}`}
+              >
+                <h3 className="text-4xl sm:text-5xl font-black uppercase tracking-tight">{c.title}</h3>
+                <p className="mt-5 text-lg sm:text-xl font-medium text-cream/80 leading-relaxed">{c.line}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

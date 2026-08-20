@@ -66,7 +66,7 @@ export default function Hero() {
       <motion.div style={{ opacity: heroOpacity }} className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-ink bg-lime px-4 py-1.5 text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em]">
-            India's First Board Game Festival
+            India's Ultimate Game Festival
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.85, delay: 0.15, ease: [0.22, 1, 0.36, 1] }} className="w-full">
@@ -74,7 +74,7 @@ export default function Hero() {
           </motion.div>
 
           <div className="mt-10 max-w-xl text-2xl sm:text-4xl font-bold tracking-tight leading-snug">
-            <Line>India's First Board Game Festival</Line>
+            <Line>India's Ultimate Game Festival</Line>
             <Line className="text-pink">Rolls Into Pune.</Line>
           </div>
 
@@ -100,8 +100,8 @@ export default function Hero() {
             <img src={IMAGES.heroFlatlay} alt="Board game festival flat lay" className="h-[340px] sm:h-[440px] w-full object-cover" loading="eager" />
           </div>
           <div className="absolute -bottom-6 -left-6 rounded-2xl border-[3px] border-ink bg-teal px-5 py-3 shadow-[6px_6px_0px_0px_#141414] rotate-[-4deg]">
-            <div className="text-2xl font-black leading-none">1000+</div>
-            <div className="text-[11px] font-bold uppercase tracking-wide">Games in play</div>
+            <div className="text-2xl font-black leading-none">1000s</div>
+            <div className="text-[11px] font-bold uppercase tracking-wide">of Games</div>
           </div>
           <div className="absolute -top-5 -right-3 animate-floaty"><Shape type="plus" color="amber" size={48} /></div>
         </motion.div>

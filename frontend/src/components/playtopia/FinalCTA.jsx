@@ -31,7 +31,7 @@ export default function FinalCTA() {
           Your <span className="text-coral">Move.</span>
         </motion.h2>
         <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="mx-auto mt-6 max-w-2xl text-lg sm:text-xl font-medium text-ink/75">
-          1000+ games. Three zones. One very good evening.
+          1000s of games. Three zones. One very good evening.
         </motion.p>
 
         <div className="mt-10 flex flex-col items-center gap-6">

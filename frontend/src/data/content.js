@@ -9,33 +9,33 @@ export const EVENT = {
 };
 
 export const IMAGES = {
-  heroFlatlay: "/Hero Image.jpeg",
+  heroFlatlay: "/Hero Banner.png",
   giantJenga: "/Jenga.png",
   giantTwister: "/Twistter.png",
   chess: "/Chess.png",
-  experienceZone: "/Experience Zone.png",
-  competitionZone: "/Compitition Zone.png",
-  boardGames: "/Board Game Zone.png",
+  activityZone: "/ACTIVITY ZONE.png",
+  sponsorZone: "/SPONSER'S ZONE.png",
+  boardGames: "/BOARD GAME ZONE.png",
 };
 
 export const CHAPTERS = [
-  { no: "01", title: "Discover", zone: "Board Games Zone", line: "From strategy to silliness. Find a game, pull up a chair and play.", color: "teal" },
-  { no: "02", title: "Compete", zone: "Competition Zone", line: "Big games. Real challenges. Bragging rights up for grabs.", color: "coral" },
-  { no: "03", title: "Experience", zone: "Sponsor Zone", line: "Interactive experiences. Brand activations. New ways to play.", color: "pink" },
+  { title: "Discover", line: "From strategy to silliness. Find a game, pull up a chair and play.", color: "teal" },
+  { title: "Compete", line: "Big games. Real challenges. Bragging rights up for grabs.", color: "coral" },
+  { title: "Experience", line: "Interactive experiences. Brand activations. New ways to play.", color: "pink" },
 ];
 
 export const ATTRACTIONS = [
   {
     title: "Life-Size Jenga",
     line: "Giant Jenga, stacked to the ceiling. One wrong move and it's all coming down.",
-    tag: "Competition Zone",
+    tag: "Activity Zone",
     color: "amber",
     img: IMAGES.giantJenga,
   },
   {
     title: "India's Largest Twister",
     line: "Go big or go home. Play India's largest Twister mat, live at Playtopia.",
-    tag: "Competition Zone",
+    tag: "Activity Zone",
     color: "teal",
     img: IMAGES.giantTwister,
   },
@@ -51,11 +51,19 @@ export const ATTRACTIONS = [
 export const EXTRAS = [
   { title: "F1 Simulator", line: "Feel the speed. Experience a full-throttle F1 simulator, live at the festival.", color: "coral", emoji: "🏎️" },
   { title: "Exclusive Board Games", line: "Play iconic titles like Catan, Game of Thrones and more — games you won't find at your regular game night.", color: "teal", emoji: "🎯" },
-  { title: "Free Amusement Park Passes", line: "Every attendee walks away with free amusement park passes. Play doesn't stop when the festival does.", color: "amber", emoji: "🎡" },
+  { title: "Amusement Park Passes", line: "Amusement passes. Play doesn't stop when the festival does.", color: "amber", emoji: "🎡" },
   { title: "Free Merchandise for Every Kid", line: "No one goes home empty-handed! Every kid gets free merch to take home.", color: "pink", emoji: "🎁" },
 ];
 
 export const ZONES = [
+  {
+    name: "Activity Zone",
+    where: "Basketball Court / Auditorium",
+    line: "Take on challenges, go head-to-head and put your skills — and your friendships — to the test.",
+    color: "coral",
+    banners: ["Life-Size Jenga", "Largest Twister", "Chess • ₹18,000", "Live Leaderboard"],
+    img: IMAGES.activityZone,
+  },
   {
     name: "Board Games Zone",
     where: "Mess Area (Downstairs)",
@@ -65,20 +73,12 @@ export const ZONES = [
     img: IMAGES.boardGames,
   },
   {
-    name: "Competition Zone",
-    where: "Basketball Court / Auditorium",
-    line: "Take on challenges, go head-to-head and put your skills — and your friendships — to the test.",
-    color: "coral",
-    banners: ["Life-Size Jenga", "Largest Twister", "Chess • ₹18,000", "Live Leaderboard"],
-    img: IMAGES.competitionZone,
-  },
-  {
-    name: "Sponsor Zone",
+    name: "Sponsors Zone",
     where: "Badminton Court",
     line: "Explore, compete, discover and get involved beyond the game table.",
     color: "pink",
     banners: ["Brand Activations", "Interactive Stations", "New Discoveries", "Surprises"],
-    img: IMAGES.experienceZone,
+    img: IMAGES.sponsorZone,
   },
 ];
 
@@ -92,7 +92,7 @@ export const PERSONAS = [
 
 export const COMMUNITIES = [
   { k: "PUNE", label: "Board-game communities come together under one roof.", color: "teal" },
-  { k: "1000+", label: "Games — from familiar favourites to ones you've never tried.", color: "amber" },
+  { k: "1000s", label: "Of games — from familiar favourites to ones you've never tried.", color: "amber" },
   { k: "ALL", label: "Skill levels welcome — seasoned players and first-timers alike.", color: "lime" },
   { k: "ONE", label: "Roof. One evening. Countless ways to connect and play.", color: "purple" },
 ];

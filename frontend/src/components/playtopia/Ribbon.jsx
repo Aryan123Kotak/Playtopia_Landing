@@ -2,7 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import { HEX } from "./primitives";
 
-const ITEMS = ["Rediscover Play", "Rediscover People", "Pune 2026", "1000+ Games", "Three Zones", "One Evening"];
+const ITEMS = ["Rediscover Play", "Rediscover People", "Pune 2026", "1000s of Games", "Three Zones", "One Evening"];
 
 export default function Ribbon({ color = "coral", direction = "left" }) {
   return (
